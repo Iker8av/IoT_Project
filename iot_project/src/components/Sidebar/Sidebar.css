@@ -1,10 +1,11 @@
 .Sidebar {
-    width: fit-content;
+    width: 25%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 10px 20px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -14,11 +15,39 @@
     z-index: 100;
 }
 
-.Sidebar p {
+.Sidebar h1 {
     font-size: var(--title);
     color: white;
     font-weight: bold;
-    margin: 20px;
+    width: 100%;
+    text-align: center;
+}
+.Sidebar p {
+    color: #DDDDDD;
+    font-size: var(--subTitle2);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+.Sidebar .imagen {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.Sidebar .alertButton{
+    background-color: #1798F4;
+    padding: 10px;
+    width: 90%;
+    border:  none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.Sidebar .imagen img{
     width: 100%;
 }
 
@@ -47,8 +76,8 @@
     background-color: var(--purpleHover);
 }
 
-.Sidebar > button{
-    margin-bottom: 10px;
+.Sidebar .classic-button{
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px){
