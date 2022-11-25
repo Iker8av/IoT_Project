@@ -1,0 +1,8 @@
+
+.titulos{
+    display: flex;
+}
+.titulos h3{
+    margin-right: 13rem;
+    margin-bottom: 0;
+}
