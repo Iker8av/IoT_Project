@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-src/components/Home/Home.jsx
+# src/components/Home/Home.jsx
 
 # testing
 /coverage
