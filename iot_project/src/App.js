@@ -25,6 +25,7 @@ export function Logged(){
   return(
     <div className="main-app" >
       <Sidebar/>
+      <Home/>
       <Outlet/>
     </div>
   )
