@@ -1,9 +1,10 @@
 .Home {
-    width: 80%;
+    width: 100%;
     z-index: 200;
+    overflow: hidden;
 }
 
-.Home > header{
+.Home>header {
     width: 100%;
     height: 40%;
     border-radius: 0 0 25px 0;
@@ -12,11 +13,7 @@
 }
 
 .Home h1 {
-    margin: 40px;
-}
-
-.Home h2{
-    margin: 40px;
+    margin: 50px;
 }
 
 .Home h3 {
@@ -24,7 +21,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .Home > header {
+    .Home>header {
         height: fit-content;
         border-radius: 0;
         filter: none;
@@ -36,20 +33,62 @@
     }
 }
 
-.scrolling-wrapper {
+/* Square Styles */
+
+.Home article>h2 {
+    margin: 50px 50px 35px 50px;
+}
+
+.Home article .carrousel {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
+    width: 100%;
+    overflow-y: auto;
+    /* scrollbar-color: white; */
+}
 
-.card{
-    display: inline block;
-    margin-right: 40 px;
-    border: 2px solid #008ede ;
-    width: 15%;
-    height: 20%;
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
     background: white;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+    margin: 15px 0 15px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.square .container {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.square header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.square header > .img-container {
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+.square header > .img-container img {
+    width: inherit;
+}
+
+.square span {
+    font-size: var(--sText);
+    font-weight: bold;
+}
+
+.square h2 {
+    margin-bottom: 5px;
 }

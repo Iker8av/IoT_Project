@@ -2,12 +2,15 @@
   --title: 36px;
   --subTitle1: 30px;
   --subTitle2: 26px;
+  --sText: 14px;
 
   /* Colors */
   --purple: #AC58F5;
   --purple2: #550E93;
   --purple2Active: #390963;
   --purpleHover: #8426D6;
+
+  --blue: #008EDE;
 
   --gray: #6B6B6B;
 
