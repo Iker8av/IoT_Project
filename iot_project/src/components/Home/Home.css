@@ -40,10 +40,12 @@
 }
 
 .Home article .carrousel {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    overflow-y: auto;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    /* overflow-y: auto; */
     /* scrollbar-color: white; */
 }
 
@@ -91,4 +93,63 @@
 
 .square h2 {
     margin-bottom: 5px;
+}
+
+.square:active{
+    background-color: rgb(246, 246, 246);
+}
+
+@media only screen and (max-width: 1100px) {
+    .Home article .carrousel {
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 90%;
+        }
+ }
+
+@media only screen and (max-width: 800px) {
+    .Home article>h2 {
+        margin: 30px 30px 15px 30px;
+    }
+
+    .Home article .carrousel {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .square {
+        margin-left: 30px;
+    }
+
+    .square .container {
+        gap: 20px;
+    }
+
+    .square header>.img-container {
+        width: 35px;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Home article>h2 {
+        margin: 30px 30px 15px 30px;
+    }
+
+    .Home article .carrousel {
+        grid-template-columns: 1fr;
+        width: 75%;
+    }
+
+    .square {
+        margin-left: 30px;
+    }
+
+    .square .container {
+        gap: 20px;
+    }
+
+    .square header>.img-container {
+        width: 35px;
+        aspect-ratio: 1/1;
+    }
 }
