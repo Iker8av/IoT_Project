@@ -11,7 +11,10 @@
     transition: transform 0.3s ease;
 }
 
+
 .sheet-box {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 95vh;
     position: absolute;
@@ -62,6 +65,32 @@
 
 .sheet-box > header > h2 {
     margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sheet-content {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow-x: scroll;
+}
+
+.sheet-content section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sheet-content section p {
+    font-weight: bold;
+    font-size: var(--gText);
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.sheet-content section h3 {
+    margin: 0;
 }
 
 @media only screen and (max-width: 600px){
