@@ -5,14 +5,14 @@ import SignUp from "./components/SignUp";
 import Home from "./components/Home/Home";
 import Sidebar from "./components/Sidebar/Sidebar";
 import InfoGraph from "./components/InfoGraph/InfoGraph";
-import {graphData} from './components/InfoGraph/graphData';
+import {graphData} from './components/InfoGraph/diaPorMes';
 import "./App.css"
 
 function App() {
   const [sensorData] = useState({
     labels: graphData.map((data) => data.year),
     datasets: [{
-      label: 'Minutos Encendidos:', 
+      label: 'Segundos Encendidos / Minuto:', 
       data: graphData.map((data) => data.userGain)
     }]
   });

@@ -1,3 +1,5 @@
 .graficoBar{
-    width: 100% !important;
+    width: 40% !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }

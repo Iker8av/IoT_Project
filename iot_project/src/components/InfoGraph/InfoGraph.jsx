@@ -7,6 +7,9 @@ export default function InfoGraph({chartData}) {
   return  (
     <div className='graficoBar'>
         <Bar data={chartData}/>
+        <Bar data={chartData}/>
+        <Bar data={chartData}/>
+        <Bar data={chartData}/>
     </div>
   );
 }
