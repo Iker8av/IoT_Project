@@ -32,8 +32,8 @@ app.get('/Test', async (req, res) => {
 
 app.get('/getEntries', async (req, res) => {
     try {
-        const data = await getDoc(doc(db, "Accesos", "Ventanas"))
-        res.send(data.data())
+        const data = await getDocs(collection(db, "Entradas"));
+        res.send(data.docs.map(doc => doc.data()))
     } catch (error) {
         console.error(error)
         res.status(400)
@@ -43,8 +43,8 @@ app.get('/getEntries', async (req, res) => {
 
 app.get('/getDoors', async (req, res) => {
     try {
-        const data = await getDoc(doc(db, "Accesos", "Puertas"))
-        res.send(data.data())
+        const data = await getDocs(collection(db, "Puertas"));
+        res.send(data.docs.map(doc => doc.data()))
     } catch (error) {
         console.error(error)
         res.status(400)
@@ -54,8 +54,8 @@ app.get('/getDoors', async (req, res) => {
 
 app.get('/getWindows', async (req, res) => {
     try {
-        const data = await getDoc(doc(db, "Accesos", "Ventanas"))
-        res.send(data.data())
+        const data = await getDocs(collection(db, "Ventanas"));
+        res.send(data.docs.map(doc => doc.data()))
     } catch (error) {
         console.error(error)
         res.status(400)
@@ -65,8 +65,8 @@ app.get('/getWindows', async (req, res) => {
 
 app.get('/getLights', async (req, res) => {
     try {
-        const data = await getDoc(doc(db, "Accesos", "Ventanas"))
-        res.send(data.data())
+        const data = await getDocs(collection(db, "Luces"));
+        res.send(data.docs.map(doc => doc.data()))
     } catch (error) {
         console.error(error)
         res.status(400)
